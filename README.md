@@ -150,7 +150,7 @@ You can download our pre-trained weights below. We use train one set of weights 
 [lamp](https://share.weiyun.com/W5YBK8UA),
 [phone](https://share.weiyun.com/4gDBsjls)
 
-~We have configured random seeds in src/train\_core.py and expect you to re-produce identical weights by running our training script.~ It turns out that [completely reproducible results are not guaranteed across PyTorch releases, individual commits or different platforms. Furthermore, results need not be reproducible between CPU and GPU executions, even when using identical seeds.](https://pytorch.org/docs/stable/notes/randomness.html) Also, the randomness in the PVNet synthetic data generation will create some difference in training outcome. Our training uses two graphics cards with a batch size of 10.
+It turns out that [completely reproducible results are not guaranteed across PyTorch releases, individual commits or different platforms. Furthermore, results need not be reproducible between CPU and GPU executions, even when using identical seeds.](https://pytorch.org/docs/stable/notes/randomness.html) Also, the randomness in the PVNet synthetic data generation will create some difference in training outcome. Our training uses two graphics cards with a batch size of 10.
 
 After you download the pre-trained weights, unzip them somewhere and configure `--load_dir` in `src/train_core.py` to the unzipped weights (e.g. `saved_weights/linemod/ape/checkpoints/0.001/199`).
 
