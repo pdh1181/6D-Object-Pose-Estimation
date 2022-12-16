@@ -163,7 +163,7 @@ python src/evaluate.py
 ```
 
 ## Citation
-If you find our work useful in your research, please kindly make a citation using:
+If you find this work useful in your research, please kindly make a citation using:
 ```
 @misc{song2020hybridpose,
     title={HybridPose: 6D Object Pose Estimation under Hybrid Representations},
