@@ -1,17 +1,16 @@
-# HybridPose: 6D Object Pose Estimation under Hybrid Representations
+<div align="center">
+
+# 6D Object Pose Estimation using Hybrid Intermediate Representation
+
+[Sri Harsha Eedala]<sup>1</sup><sup>*</sup>
+
+<sup>1</sup> Department of Electrical and Computer Engineering,Arizona State University<br>
+
+<sup>*</sup>The implementation of this work is done as a part of class project
+</div>
+
 This repository contains authors' implementation of [HybridPose: 6D Object Pose Estimation under Hybrid Representations](https://arxiv.org/abs/2001.01869). Our implementation is based on [PVNet](https://github.com/zju3dv/pvnet).
-We warmly welcome any discussions related to our implementation and our paper. Please feel free to open an issue.
 
-**News (October 16, 2020):** We have updated our experiments using the conventional data split on Linemod/Occlusion Linemod. Following baseline works, we use around 15% of Linemod examples for training. The rest of Linemod examples, as well as the entire Occlusion Linemod dataset, are used for testing. Both this GitHub repository and the arXiv paper are updated. HybridPose achieves an ADD(-S) score of 0.9125577238 on Linemod, and 0.4754330537 on Occlusion Linemod. We sincerely appreciate the readers who pointed out this issue to us, including but not limited to [Shun Iwase](https://github.com/sh8) and [hiyyg](https://github.com/hiyyg).
-
-## Introduction
-HybridPose consists of intermediate representation prediction networks and a pose regression module. The prediction networks take an image as input, and output predicted keypoints, edge vectors, and symmetry correspondences. The pose regression module consists of a initialization sub-module and a refinement sub-module. The initialization sub-module solves a linear system with predicted intermediate representations to obtain an initial pose. The refinement sub-module utilizes GM robust norm to obtain the final pose prediction.
-![Approach overview](./assets/overview.png)
-
-## Download
-```
-git clone --recurse-submodules git@github.com:chensong1995/HybridPose.git
-```
 
 ## Environment set-up
 Please install [Anaconda](https://www.anaconda.com/distribution/) first and execute the following commands:
